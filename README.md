@@ -144,13 +144,24 @@ Para borrar los datos guardados y volver a los registros de ejemplo, ejecuta `lo
 
 
 | Pantalla principal con datos | ![Principal](CAPTU<img width="1917" height="540" alt="CAPTURA 4 " src="https://github.com/user-attachments/assets/9b6551a4-97bb-40fe-a77c-b87f9f109447" />
-<img width="1871" height="771" alt="CAPTURA 3" src="https://github.com/user-attachments/assets/b866bec8-26ff-4283-8ddd-fe1c8ffa3ace" />
+
+# ELIMIAR REPUESTOS
+<img width="1871" height="771" alt="CAPTURA 4" src="https://github.com/user-attachments/assets/b866bec8-26ff-4283-8ddd-fe1c8ffa3ace" />
+
+
+
 
 #IMAGEN 3 EDITAR REPUESTOS
 <img width="1871" height="771" alt="CAPTURA 3" src="https://github.com/user-attachments/assets/8aad5115-3746-4e8d-9ed4-db6f1d97095e" />
 
+
+
+
+
 #IMAGEN 2 CREAR REPUESTOS
 <img width="1902" height="995" alt="CAPTURA 2" src="https://github.com/user-attachments/assets/ee7f97a7-1c0e-4e80-bc9f-95ffccd9812c" />
+
+
 
 
 #IMAGEN 1 PRINCIPAL
