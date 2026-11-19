@@ -14,6 +14,8 @@ const btnGuardar = document.getElementById('btnGuardar');
 const btnCancelar = document.getElementById('btnCancelar');
 const tituloForm = document.getElementById('tituloForm');
 const buscador = document.getElementById('buscador');
+const filtroCategoria = document.getElementById('filtroCategoria');
+const btnLimpiar = document.getElementById('btnLimpiar');
 const tabla = document.getElementById('tabla');
 const vacio = document.getElementById('vacio');
 const contador = document.getElementById('contador');
@@ -94,9 +96,9 @@ function crearRepuesto(datos) {
 
 // Dibuja la tabla aplicando el filtro de búsqueda y actualiza el contador
 function renderizar() {
-  const texto = buscador.value.toLowerCase();
-  const lista = repuestos.filter(r => `${r.nombre} ${r.categoria} ${r.estado}`.toLowerCase().includes(texto));
-
+   const texto = buscador.value.toLowerCase();
+  const categoriaElegida = filtroCategoria.value;
+  const lista = repuestos.filter(r => `${r.nombre} ${r.categoria} ${r.estado}`.toLowerCase().includes(texto) && (categoriaElegida === '' || r.categoria === categoriaElegida));
   tabla.innerHTML = lista.map(r => `
     <tr>
       <td class="px-3 py-2 font-medium">${limpiar(r.nombre)}</td>
@@ -170,7 +172,11 @@ function exportarJSON() {
   enlace.click();
   URL.revokeObjectURL(enlace.href);
 }
-
+function limpiarFiltros() {
+  buscador.value = '';
+  filtroCategoria.value = '';
+  renderizar();
+}
 // ---------- EVENTOS ----------
 
 formulario.addEventListener('submit', e => {
@@ -184,6 +190,8 @@ formulario.addEventListener('submit', e => {
 
 btnCancelar.addEventListener('click', salirModoEdicion);
 buscador.addEventListener('input', renderizar);
+filtroCategoria.addEventListener('change', renderizar);
+btnLimpiar.addEventListener('click', limpiarFiltros);
 document.getElementById('btnExportar').addEventListener('click', exportarJSON);
 
 // Un solo listener para los botones Editar / Eliminar de la tabla
