@@ -222,7 +222,7 @@ Para borrar los datos guardados y volver a los registros de ejemplo, ejecuta `lo
 
 ## Video explicativo
 
-[Enlace al video]
+https://youtu.be/_0dypdA_lpw?si=o-ybK0Am53W11ZaA    (ENLACE DE VIDEO DE YOUTUBE)
 
 ## Uso responsable de la IA
 
